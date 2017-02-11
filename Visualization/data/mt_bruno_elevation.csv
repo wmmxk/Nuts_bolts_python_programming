@@ -1,0 +1,1280 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/frameworks-298818692f75de57d67115ca5a0c1f983d1d5ad302774216c297495f46f0a3da.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-60036bb7b7dfd779ab4ba88c7223d4b0716de98371ee47d66a075a4d8b2f6098.css" media="all" rel="stylesheet" />
+    
+    
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/site-73b3dae8eb441c98982c7306f0e59decca409e87188e07bc1a961b8cea511aab.css" media="all" rel="stylesheet" />
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=device-width">
+    
+    <title>datasets/mt_bruno_elevation.csv at master · plotly/datasets · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="https://avatars2.githubusercontent.com/u/5997976?v=3&amp;s=400" name="twitter:image:src" /><meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="plotly/datasets" name="twitter:title" /><meta content="CSV datasets used in Plotly API examples" name="twitter:description" />
+      <meta content="https://avatars2.githubusercontent.com/u/5997976?v=3&amp;s=400" property="og:image" /><meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="plotly/datasets" property="og:title" /><meta content="https://github.com/plotly/datasets" property="og:url" /><meta content="CSV datasets used in Plotly API examples" property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+    <meta name="request-id" content="D8D0:3AFE:1A67E0:2913B9:588A8C08" data-pjax-transient>
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+<meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="D8D0:3AFE:1A67E0:2913B9:588A8C08" name="octolytics-dimension-request_id" />
+<meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" name="analytics-location" />
+
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged Out">
+
+
+
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+        <meta name="expected-hostname" content="github.com">
+      <meta name="js-proxy-site-detection-payload" content="OGVkZTA5MDE0ODJiNGFlM2QyNzIxZDMyMzkwZDA2Nzk4ZTZmYzM4YmE1ZTIzNzRiNDM4MjAwMzVlMjkxNzcxZnx7InJlbW90ZV9hZGRyZXNzIjoiMTY4LjE1MC4zMC4xMTkiLCJyZXF1ZXN0X2lkIjoiRDhEMDozQUZFOjFBNjdFMDoyOTEzQjk6NTg4QThDMDgiLCJ0aW1lc3RhbXAiOjE0ODU0NzQ4MjQsImhvc3QiOiJnaXRodWIuY29tIn0=">
+
+
+      <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#000000">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <meta name="html-safe-nonce" content="f1afc749f1e83e2b3a0fe4a7b746454c7799997d">
+
+    <meta http-equiv="x-pjax-version" content="c0c53b36a60759f760f15c03d1d69666">
+    
+
+      
+  <meta name="description" content="CSV datasets used in Plotly API examples">
+  <meta name="go-import" content="github.com/plotly/datasets git https://github.com/plotly/datasets.git">
+
+  <meta content="5997976" name="octolytics-dimension-user_id" /><meta content="plotly" name="octolytics-dimension-user_login" /><meta content="38228834" name="octolytics-dimension-repository_id" /><meta content="plotly/datasets" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="38228834" name="octolytics-dimension-repository_network_root_id" /><meta content="plotly/datasets" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/plotly/datasets/commits/master.atom" rel="alternate" title="Recent Commits to datasets:master" type="application/atom+xml">
+
+
+      <link rel="canonical" href="https://github.com/plotly/datasets/blob/master/api_docs/mt_bruno_elevation.csv" data-pjax-transient>
+  </head>
+
+
+  <body class="logged-out  env-production  vis-public page-blob">
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+
+    
+    
+    
+
+
+
+          <header class="site-header js-details-container Details alt-body-font" role="banner">
+  <div class="container-responsive">
+    <a class="header-logo-invertocat" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="32" version="1.1" viewBox="0 0 16 16" width="32"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+    </a>
+
+    <button class="btn-link float-right site-header-toggle js-details-target" type="button" aria-label="Toggle navigation">
+      <svg aria-hidden="true" class="octicon octicon-three-bars" height="24" version="1.1" viewBox="0 0 12 16" width="18"><path fill-rule="evenodd" d="M11.41 9H.59C0 9 0 8.59 0 8c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zm0-4H.59C0 5 0 4.59 0 4c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zM.59 11H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1H.59C0 13 0 12.59 0 12c0-.59 0-1 .59-1z"/></svg>
+    </button>
+
+    <div class="site-header-menu">
+      <nav class="site-header-nav site-header-nav-main">
+        <a href="/personal" class="js-selected-navigation-item nav-item nav-item-personal" data-ga-click="Header, click, Nav menu - item:personal" data-selected-links="/personal /personal">
+          Personal
+</a>        <a href="/open-source" class="js-selected-navigation-item nav-item nav-item-opensource" data-ga-click="Header, click, Nav menu - item:opensource" data-selected-links="/open-source /open-source">
+          Open source
+</a>        <a href="/business" class="js-selected-navigation-item nav-item nav-item-business" data-ga-click="Header, click, Nav menu - item:business" data-selected-links="/business /business/partners /business/features /business/customers /business">
+          Business
+</a>        <a href="/explore" class="js-selected-navigation-item nav-item nav-item-explore" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship /showcases /explore">
+          Explore
+</a>      </nav>
+
+      <div class="site-header-actions">
+            <a class="btn btn-primary site-header-actions-btn" href="/join?source=header-repo" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+          <a class="btn site-header-actions-btn mr-1" href="/login?return_to=%2Fplotly%2Fdatasets%2Fblob%2Fmaster%2Fapi_docs%2Fmt_bruno_elevation.csv" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+      </div>
+
+        <nav class="site-header-nav site-header-nav-secondary mr-md-3">
+          <a class="nav-item" href="/pricing">Pricing</a>
+          <a class="nav-item" href="/blog">Blog</a>
+          <a class="nav-item" href="https://help.github.com">Support</a>
+          <a class="nav-item header-search-link" href="https://github.com/search">Search GitHub</a>
+              <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/plotly/datasets/search" class="js-site-search-form" data-scoped-search-url="/plotly/datasets/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <label class="form-control header-search-wrapper js-chromeless-input-container">
+      <div class="header-search-scope">This repository</div>
+      <input type="text"
+        class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable"
+        data-hotkey="s"
+        name="q"
+        placeholder="Search"
+        aria-label="Search this repository"
+        data-unscoped-placeholder="Search GitHub"
+        data-scoped-placeholder="Search"
+        autocapitalize="off">
+    </label>
+</form></div>
+
+        </nav>
+    </div>
+  </div>
+</header>
+
+
+
+    <div id="start-of-content" class="accessibility-aid"></div>
+
+      <div id="js-flash-container">
+</div>
+
+
+    <div role="main">
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode">
+    <div id="js-repo-pjax-container" data-pjax-container>
+      
+<div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav">
+  <div class="container repohead-details-container">
+
+    
+
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2Fplotly%2Fdatasets"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+    Watch
+  </a>
+  <a class="social-count" href="/plotly/datasets/watchers"
+     aria-label="34 users are watching this repository">
+    34
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fplotly%2Fdatasets"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"/></svg>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/plotly/datasets/stargazers"
+      aria-label="27 users starred this repository">
+      27
+    </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fplotly%2Fdatasets"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <svg aria-hidden="true" class="octicon octicon-repo-forked" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+        Fork
+      </a>
+
+    <a href="/plotly/datasets/network" class="social-count"
+       aria-label="35 users forked this repository">
+      35
+    </a>
+  </li>
+</ul>
+
+    <h1 class="public ">
+  <svg aria-hidden="true" class="octicon octicon-repo" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+  <span class="author" itemprop="author"><a href="/plotly" class="url fn" rel="author">plotly</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a href="/plotly/datasets" data-pjax="#js-repo-pjax-container">datasets</a></strong>
+
+</h1>
+
+  </div>
+  <div class="container">
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/plotly/datasets" class="js-selected-navigation-item selected reponav-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /plotly/datasets" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-code" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a href="/plotly/datasets/issues" class="js-selected-navigation-item reponav-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /plotly/datasets/issues" itemprop="url">
+        <svg aria-hidden="true" class="octicon octicon-issue-opened" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+        <span itemprop="name">Issues</span>
+        <span class="counter">1</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/plotly/datasets/pulls" class="js-selected-navigation-item reponav-item" data-hotkey="g p" data-selected-links="repo_pulls /plotly/datasets/pulls" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="counter">2</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+  <a href="/plotly/datasets/projects" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /plotly/datasets/projects">
+    <svg aria-hidden="true" class="octicon octicon-project" height="16" version="1.1" viewBox="0 0 15 16" width="15"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+    Projects
+    <span class="counter">0</span>
+</a>
+
+
+  <a href="/plotly/datasets/pulse" class="js-selected-navigation-item reponav-item" data-selected-links="pulse /plotly/datasets/pulse">
+    <svg aria-hidden="true" class="octicon octicon-pulse" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M11.5 8L8.8 5.4 6.6 8.5 5.5 1.6 2.38 8H0v2h3.6l.9-1.8.9 5.4L9 8.5l1.6 1.5H14V8z"/></svg>
+    Pulse
+</a>
+  <a href="/plotly/datasets/graphs" class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors /plotly/datasets/graphs">
+    <svg aria-hidden="true" class="octicon octicon-graph" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg>
+    Graphs
+</a>
+
+</nav>
+
+  </div>
+</div>
+
+<div class="container new-discussion-timeline experiment-repo-nav">
+  <div class="repository-content">
+
+    
+
+<a href="/plotly/datasets/blob/b2c1bbc26e6997d0ad34b0fae6efbb5ecfb831b8/api_docs/mt_bruno_elevation.csv" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+<!-- blob contrib key: blob_contributors:v21:4758dc93f25738bfbaf33d253328f5b9 -->
+
+<div class="file-navigation js-zeroclipboard-container">
+  
+<div class="select-menu branch-select-menu js-menu-container js-select-menu float-left">
+  <button class="btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    
+    type="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
+    <i>Branch:</i>
+    <span class="js-select-button css-truncate-target">master</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax aria-hidden="true">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <svg aria-label="Close" class="octicon octicon-x js-menu-close" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="form-control js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/plotly/datasets/blob/earthquake_data/api_docs/mt_bruno_elevation.csv"
+               data-name="earthquake_data"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                earthquake_data
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+               href="/plotly/datasets/blob/master/api_docs/mt_bruno_elevation.csv"
+               data-name="master"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                master
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/plotly/datasets/blob/new-data-sets/api_docs/mt_bruno_elevation.csv"
+               data-name="new-data-sets"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                new-data-sets
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <div class="BtnGroup float-right">
+    <a href="/plotly/datasets/find/master"
+          class="js-pjax-capture-input btn btn-sm BtnGroup-item"
+          data-pjax
+          data-hotkey="t">
+      Find file
+    </a>
+    <button aria-label="Copy file path to clipboard" class="js-zeroclipboard btn btn-sm BtnGroup-item tooltipped tooltipped-s" data-copied-hint="Copied!" type="button">Copy path</button>
+  </div>
+  <div class="breadcrumb js-zeroclipboard-target">
+    <span class="repo-root js-repo-root"><span class="js-path-segment"><a href="/plotly/datasets"><span>datasets</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a href="/plotly/datasets/tree/master/api_docs"><span>api_docs</span></a></span><span class="separator">/</span><strong class="final-path">mt_bruno_elevation.csv</strong>
+  </div>
+</div>
+
+
+  <div class="commit-tease">
+      <span class="float-right">
+        <a class="commit-tease-sha" href="/plotly/datasets/commit/f0115001bcd70f9b6d6cb468fec297535eff8edf" data-pjax>
+          f011500
+        </a>
+        <relative-time datetime="2016-04-11T09:47:00Z">Apr 11, 2016</relative-time>
+      </span>
+      <div>
+        <img alt="@tarzzz" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/1546532?v=3&amp;s=40" width="20" />
+        <a href="/tarzzz" class="user-mention" rel="contributor">tarzzz</a>
+          <a href="/plotly/datasets/commit/f0115001bcd70f9b6d6cb468fec297535eff8edf" class="message" data-pjax="true" title="Added data for 3d surface example">Added data for 3d surface example</a>
+      </div>
+
+    <div class="commit-tease-contributors">
+      <button type="button" class="btn-link muted-link contributors-toggle" data-facebox="#blob_contributors_box">
+        <strong>1</strong>
+         contributor
+      </button>
+      
+    </div>
+
+    <div id="blob_contributors_box" style="display:none">
+      <h2 class="facebox-header" data-facebox-id="facebox-header">Users who have contributed to this file</h2>
+      <ul class="facebox-user-list" data-facebox-id="facebox-description">
+          <li class="facebox-user-list-item">
+            <img alt="@tarzzz" height="24" src="https://avatars1.githubusercontent.com/u/1546532?v=3&amp;s=48" width="24" />
+            <a href="/tarzzz">tarzzz</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+
+
+<div class="file">
+  <div class="file-header">
+  <div class="file-actions">
+
+    <div class="BtnGroup">
+      <a href="/plotly/datasets/raw/master/api_docs/mt_bruno_elevation.csv" class="btn btn-sm BtnGroup-item" id="raw-url">Raw</a>
+        <a href="/plotly/datasets/blame/master/api_docs/mt_bruno_elevation.csv" class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b">Blame</a>
+      <a href="/plotly/datasets/commits/master/api_docs/mt_bruno_elevation.csv" class="btn btn-sm BtnGroup-item" rel="nofollow">History</a>
+    </div>
+
+
+        <button type="button" class="btn-octicon disabled tooltipped tooltipped-nw"
+          aria-label="You must be signed in to make or propose changes">
+          <svg aria-hidden="true" class="octicon octicon-pencil" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
+        </button>
+        <button type="button" class="btn-octicon btn-octicon-danger disabled tooltipped tooltipped-nw"
+          aria-label="You must be signed in to make or propose changes">
+          <svg aria-hidden="true" class="octicon octicon-trashcan" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
+        </button>
+  </div>
+
+  <div class="file-info">
+      27 lines (26 sloc)
+      <span class="file-info-divider"></span>
+    5.08 KB
+  </div>
+</div>
+
+  
+
+  <div itemprop="text" class="blob-wrapper data type-csv">
+      <div class="blob-interaction-bar">
+  <svg aria-hidden="true" class="octicon octicon-search" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+  <input type="text" name="filter" class="form-control js-csv-filter-field blob-filter" autocapitalize="off"
+         placeholder="Search this file…" aria-label="Search this file…">
+</div>
+
+<div class="markdown-body">
+  <table class="js-csv-data csv-data js-file-line-container">
+    <thead>
+      <tr id="LC1" class="js-file-line">
+        <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <th></th>
+        <th>0</th>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+        <th>7</th>
+        <th>8</th>
+        <th>9</th>
+        <th>10</th>
+        <th>11</th>
+        <th>12</th>
+        <th>13</th>
+        <th>14</th>
+        <th>15</th>
+        <th>16</th>
+        <th>17</th>
+        <th>18</th>
+        <th>19</th>
+        <th>20</th>
+        <th>21</th>
+        <th>22</th>
+        <th>23</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr id="LC2" class="js-file-line">
+        <td id="L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td>0</td>
+        <td>27.80985</td>
+        <td>49.61936</td>
+        <td>83.08067</td>
+        <td>116.6632</td>
+        <td>130.414</td>
+        <td>150.7206</td>
+        <td>220.1871</td>
+        <td>156.1536</td>
+        <td>148.6416</td>
+        <td>203.7845</td>
+        <td>206.0386</td>
+        <td>107.1618</td>
+        <td>68.36975</td>
+        <td>45.3359</td>
+        <td>49.96142</td>
+        <td>21.89279</td>
+        <td>17.02552</td>
+        <td>11.74317</td>
+        <td>14.75226</td>
+        <td>13.6671</td>
+        <td>5.677561</td>
+        <td>3.31234</td>
+        <td>1.156517</td>
+        <td>-0.147662</td>
+      </tr>
+      <tr id="LC3" class="js-file-line">
+        <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td>1</td>
+        <td>27.71966</td>
+        <td>48.55022</td>
+        <td>65.21374</td>
+        <td>95.27666</td>
+        <td>116.9964</td>
+        <td>133.9056</td>
+        <td>152.3412</td>
+        <td>151.934</td>
+        <td>160.1139</td>
+        <td>179.5327</td>
+        <td>147.6184</td>
+        <td>170.3943</td>
+        <td>121.8194</td>
+        <td>52.58537</td>
+        <td>33.08871</td>
+        <td>38.40972</td>
+        <td>44.24843</td>
+        <td>69.5786</td>
+        <td>4.019351</td>
+        <td>3.050024</td>
+        <td>3.039719</td>
+        <td>2.996142</td>
+        <td>2.967954</td>
+        <td>1.999594</td>
+      </tr>
+      <tr id="LC4" class="js-file-line">
+        <td id="L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td>2</td>
+        <td>30.4267</td>
+        <td>33.47752</td>
+        <td>44.80953</td>
+        <td>62.47495</td>
+        <td>77.43523</td>
+        <td>104.2153</td>
+        <td>102.7393</td>
+        <td>137.0004</td>
+        <td>186.0706</td>
+        <td>219.3173</td>
+        <td>181.7615</td>
+        <td>120.9154</td>
+        <td>143.1835</td>
+        <td>82.40501</td>
+        <td>48.47132</td>
+        <td>74.71461</td>
+        <td>60.0909</td>
+        <td>7.073525</td>
+        <td>6.089851</td>
+        <td>6.53745</td>
+        <td>6.666096</td>
+        <td>7.306965</td>
+        <td>5.73684</td>
+        <td>3.625628</td>
+      </tr>
+      <tr id="LC5" class="js-file-line">
+        <td id="L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td>3</td>
+        <td>16.66549</td>
+        <td>30.1086</td>
+        <td>39.96952</td>
+        <td>44.12225</td>
+        <td>59.57512</td>
+        <td>77.56929</td>
+        <td>106.8925</td>
+        <td>166.5539</td>
+        <td>175.2381</td>
+        <td>185.2815</td>
+        <td>154.5056</td>
+        <td>83.0433</td>
+        <td>62.61732</td>
+        <td>62.33167</td>
+        <td>60.55916</td>
+        <td>55.92124</td>
+        <td>15.17284</td>
+        <td>8.248324</td>
+        <td>36.68087</td>
+        <td>61.93413</td>
+        <td>20.26867</td>
+        <td>68.58819</td>
+        <td>46.49812</td>
+        <td>0.2360095</td>
+      </tr>
+      <tr id="LC6" class="js-file-line">
+        <td id="L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td>4</td>
+        <td>8.815617</td>
+        <td>18.3516</td>
+        <td>8.658275</td>
+        <td>27.5859</td>
+        <td>48.62691</td>
+        <td>60.18013</td>
+        <td>91.3286</td>
+        <td>145.7109</td>
+        <td>116.0653</td>
+        <td>106.2662</td>
+        <td>68.69447</td>
+        <td>53.10596</td>
+        <td>37.92797</td>
+        <td>47.95942</td>
+        <td>47.42691</td>
+        <td>69.20731</td>
+        <td>44.95468</td>
+        <td>29.17197</td>
+        <td>17.91674</td>
+        <td>16.25515</td>
+        <td>14.65559</td>
+        <td>17.26048</td>
+        <td>31.22245</td>
+        <td>46.71704</td>
+      </tr>
+      <tr id="LC7" class="js-file-line">
+        <td id="L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td>5</td>
+        <td>6.628881</td>
+        <td>10.41339</td>
+        <td>24.81939</td>
+        <td>26.08952</td>
+        <td>30.1605</td>
+        <td>52.30802</td>
+        <td>64.71007</td>
+        <td>76.30823</td>
+        <td>84.63686</td>
+        <td>99.4324</td>
+        <td>62.52132</td>
+        <td>46.81647</td>
+        <td>55.76606</td>
+        <td>82.4099</td>
+        <td>140.2647</td>
+        <td>81.26501</td>
+        <td>56.45756</td>
+        <td>30.42164</td>
+        <td>17.28782</td>
+        <td>8.302431</td>
+        <td>2.981626</td>
+        <td>2.698536</td>
+        <td>5.886086</td>
+        <td>5.268358</td>
+      </tr>
+      <tr id="LC8" class="js-file-line">
+        <td id="L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td>6</td>
+        <td>21.83975</td>
+        <td>6.63927</td>
+        <td>18.97085</td>
+        <td>32.89204</td>
+        <td>43.15014</td>
+        <td>62.86014</td>
+        <td>104.6657</td>
+        <td>130.2294</td>
+        <td>114.8494</td>
+        <td>106.9873</td>
+        <td>61.89647</td>
+        <td>55.55682</td>
+        <td>86.80986</td>
+        <td>89.27802</td>
+        <td>122.4221</td>
+        <td>123.9698</td>
+        <td>109.0952</td>
+        <td>98.41956</td>
+        <td>77.61374</td>
+        <td>32.49031</td>
+        <td>14.67344</td>
+        <td>7.370775</td>
+        <td>0.03711011</td>
+        <td>0.6423392</td>
+      </tr>
+      <tr id="LC9" class="js-file-line">
+        <td id="L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td>7</td>
+        <td>53.34303</td>
+        <td>26.79797</td>
+        <td>6.63927</td>
+        <td>10.88787</td>
+        <td>17.2044</td>
+        <td>56.18116</td>
+        <td>79.70141</td>
+        <td>90.8453</td>
+        <td>98.27675</td>
+        <td>80.87243</td>
+        <td>74.7931</td>
+        <td>75.54661</td>
+        <td>73.4373</td>
+        <td>74.11694</td>
+        <td>68.1749</td>
+        <td>46.24076</td>
+        <td>39.93857</td>
+        <td>31.21653</td>
+        <td>36.88335</td>
+        <td>40.02525</td>
+        <td>117.4297</td>
+        <td>12.70328</td>
+        <td>1.729771</td>
+        <td>0.0</td>
+      </tr>
+      <tr id="LC10" class="js-file-line">
+        <td id="L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td>8</td>
+        <td>25.66785</td>
+        <td>63.05717</td>
+        <td>22.1414</td>
+        <td>17.074</td>
+        <td>41.74483</td>
+        <td>60.27227</td>
+        <td>81.42432</td>
+        <td>114.444</td>
+        <td>102.3234</td>
+        <td>101.7878</td>
+        <td>111.031</td>
+        <td>119.2309</td>
+        <td>114.0777</td>
+        <td>110.5296</td>
+        <td>59.19355</td>
+        <td>42.47175</td>
+        <td>14.63598</td>
+        <td>6.944074</td>
+        <td>6.944075</td>
+        <td>27.74936</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.09449376</td>
+        <td>0.07732264</td>
+      </tr>
+      <tr id="LC11" class="js-file-line">
+        <td id="L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td>9</td>
+        <td>12.827</td>
+        <td>69.20554</td>
+        <td>46.76293</td>
+        <td>13.96517</td>
+        <td>33.88744</td>
+        <td>61.82613</td>
+        <td>84.74799</td>
+        <td>121.122</td>
+        <td>145.2741</td>
+        <td>153.1797</td>
+        <td>204.786</td>
+        <td>227.9242</td>
+        <td>236.3038</td>
+        <td>228.3655</td>
+        <td>79.34425</td>
+        <td>25.93483</td>
+        <td>6.944074</td>
+        <td>6.944074</td>
+        <td>6.944075</td>
+        <td>7.553681</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+      <tr id="LC12" class="js-file-line">
+        <td id="L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td>10</td>
+        <td>0.0</td>
+        <td>68.66396</td>
+        <td>59.0435</td>
+        <td>33.35762</td>
+        <td>47.45282</td>
+        <td>57.8355</td>
+        <td>78.91689</td>
+        <td>107.8275</td>
+        <td>168.0053</td>
+        <td>130.9597</td>
+        <td>212.5541</td>
+        <td>165.8122</td>
+        <td>210.2429</td>
+        <td>181.1713</td>
+        <td>189.7617</td>
+        <td>137.3378</td>
+        <td>84.65395</td>
+        <td>8.677168</td>
+        <td>6.956576</td>
+        <td>8.468093</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+      <tr id="LC13" class="js-file-line">
+        <td id="L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td>11</td>
+        <td>0.0</td>
+        <td>95.17499</td>
+        <td>80.03818</td>
+        <td>59.89862</td>
+        <td>39.58476</td>
+        <td>50.28058</td>
+        <td>63.81641</td>
+        <td>80.61302</td>
+        <td>66.37824</td>
+        <td>198.7651</td>
+        <td>244.3467</td>
+        <td>294.2474</td>
+        <td>264.3517</td>
+        <td>176.4082</td>
+        <td>60.21857</td>
+        <td>77.41475</td>
+        <td>53.16981</td>
+        <td>56.16393</td>
+        <td>6.949235</td>
+        <td>7.531059</td>
+        <td>3.780177</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+      <tr id="LC14" class="js-file-line">
+        <td id="L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td>12</td>
+        <td>0.0</td>
+        <td>134.9879</td>
+        <td>130.3696</td>
+        <td>96.86325</td>
+        <td>75.70494</td>
+        <td>58.86466</td>
+        <td>57.20374</td>
+        <td>55.18837</td>
+        <td>78.128</td>
+        <td>108.5582</td>
+        <td>154.3774</td>
+        <td>319.1686</td>
+        <td>372.8826</td>
+        <td>275.4655</td>
+        <td>130.2632</td>
+        <td>54.93822</td>
+        <td>25.49719</td>
+        <td>8.047439</td>
+        <td>8.084393</td>
+        <td>5.115252</td>
+        <td>5.678269</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+      <tr id="LC15" class="js-file-line">
+        <td id="L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td>13</td>
+        <td>0.0</td>
+        <td>48.08919</td>
+        <td>142.5558</td>
+        <td>140.3777</td>
+        <td>154.7261</td>
+        <td>87.9361</td>
+        <td>58.11092</td>
+        <td>52.83869</td>
+        <td>67.14822</td>
+        <td>83.66798</td>
+        <td>118.9242</td>
+        <td>150.0681</td>
+        <td>272.9709</td>
+        <td>341.1366</td>
+        <td>238.664</td>
+        <td>190.2</td>
+        <td>116.8943</td>
+        <td>91.48672</td>
+        <td>14.0157</td>
+        <td>42.29277</td>
+        <td>5.115252</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+      <tr id="LC16" class="js-file-line">
+        <td id="L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td>14</td>
+        <td>0.0</td>
+        <td>54.1941</td>
+        <td>146.3839</td>
+        <td>99.48143</td>
+        <td>96.19411</td>
+        <td>102.9473</td>
+        <td>76.14089</td>
+        <td>57.7844</td>
+        <td>47.0402</td>
+        <td>64.36799</td>
+        <td>84.23767</td>
+        <td>162.7181</td>
+        <td>121.3275</td>
+        <td>213.1646</td>
+        <td>328.482</td>
+        <td>285.4489</td>
+        <td>283.8319</td>
+        <td>212.815</td>
+        <td>164.549</td>
+        <td>92.29631</td>
+        <td>7.244015</td>
+        <td>1.167</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+      <tr id="LC17" class="js-file-line">
+        <td id="L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td>15</td>
+        <td>0.0</td>
+        <td>6.919659</td>
+        <td>195.1709</td>
+        <td>132.5253</td>
+        <td>135.2341</td>
+        <td>89.85069</td>
+        <td>89.45549</td>
+        <td>60.29967</td>
+        <td>50.33806</td>
+        <td>39.17583</td>
+        <td>59.06854</td>
+        <td>74.52159</td>
+        <td>84.93402</td>
+        <td>187.1219</td>
+        <td>123.9673</td>
+        <td>103.7027</td>
+        <td>128.986</td>
+        <td>165.1283</td>
+        <td>249.7054</td>
+        <td>95.39966</td>
+        <td>10.00284</td>
+        <td>2.39255</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+      <tr id="LC18" class="js-file-line">
+        <td id="L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td>16</td>
+        <td>0.0</td>
+        <td>21.73871</td>
+        <td>123.1339</td>
+        <td>176.7414</td>
+        <td>158.2698</td>
+        <td>137.235</td>
+        <td>105.3089</td>
+        <td>86.63255</td>
+        <td>53.11591</td>
+        <td>29.03865</td>
+        <td>30.40539</td>
+        <td>39.04902</td>
+        <td>49.23405</td>
+        <td>63.27853</td>
+        <td>111.4215</td>
+        <td>101.1956</td>
+        <td>40.00962</td>
+        <td>59.84565</td>
+        <td>74.51253</td>
+        <td>17.06316</td>
+        <td>2.435141</td>
+        <td>2.287471</td>
+        <td>-0.0003636982</td>
+        <td>0.0</td>
+      </tr>
+      <tr id="LC19" class="js-file-line">
+        <td id="L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td>17</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>62.04672</td>
+        <td>136.3122</td>
+        <td>201.7952</td>
+        <td>168.1343</td>
+        <td>95.2046</td>
+        <td>58.90624</td>
+        <td>46.94091</td>
+        <td>49.27053</td>
+        <td>37.10416</td>
+        <td>17.97011</td>
+        <td>30.93697</td>
+        <td>33.39257</td>
+        <td>44.03077</td>
+        <td>55.64542</td>
+        <td>78.22423</td>
+        <td>14.42782</td>
+        <td>9.954997</td>
+        <td>7.768213</td>
+        <td>13.0254</td>
+        <td>21.73166</td>
+        <td>2.156372</td>
+        <td>0.5317867</td>
+      </tr>
+      <tr id="LC20" class="js-file-line">
+        <td id="L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td>18</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>79.62993</td>
+        <td>139.6978</td>
+        <td>173.167</td>
+        <td>192.8718</td>
+        <td>196.3499</td>
+        <td>144.6611</td>
+        <td>106.5424</td>
+        <td>57.16653</td>
+        <td>41.16107</td>
+        <td>32.12764</td>
+        <td>13.8566</td>
+        <td>10.91772</td>
+        <td>12.07177</td>
+        <td>22.38254</td>
+        <td>24.72105</td>
+        <td>6.803666</td>
+        <td>4.200841</td>
+        <td>16.46857</td>
+        <td>15.70744</td>
+        <td>33.96221</td>
+        <td>7.575688</td>
+        <td>-0.04880907</td>
+      </tr>
+      <tr id="LC21" class="js-file-line">
+        <td id="L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td>19</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>33.2664</td>
+        <td>57.53643</td>
+        <td>167.2241</td>
+        <td>196.4833</td>
+        <td>194.7966</td>
+        <td>182.1884</td>
+        <td>119.6961</td>
+        <td>73.02113</td>
+        <td>48.36549</td>
+        <td>33.74652</td>
+        <td>26.2379</td>
+        <td>16.3578</td>
+        <td>6.811293</td>
+        <td>6.63927</td>
+        <td>6.639271</td>
+        <td>8.468093</td>
+        <td>6.194273</td>
+        <td>3.591233</td>
+        <td>3.81486</td>
+        <td>8.600739</td>
+        <td>5.21889</td>
+        <td>0.0</td>
+      </tr>
+      <tr id="LC22" class="js-file-line">
+        <td id="L22" class="blob-num js-line-number" data-line-number="22"></td>
+        <td>20</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>29.77937</td>
+        <td>54.97282</td>
+        <td>144.7995</td>
+        <td>207.4904</td>
+        <td>165.3432</td>
+        <td>171.4047</td>
+        <td>174.9216</td>
+        <td>100.2733</td>
+        <td>61.46441</td>
+        <td>50.19171</td>
+        <td>26.08209</td>
+        <td>17.18218</td>
+        <td>8.468093</td>
+        <td>6.63927</td>
+        <td>6.334467</td>
+        <td>6.334467</td>
+        <td>5.666687</td>
+        <td>4.272203</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+      <tr id="LC23" class="js-file-line">
+        <td id="L23" class="blob-num js-line-number" data-line-number="23"></td>
+        <td>21</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>31.409</td>
+        <td>132.7418</td>
+        <td>185.5796</td>
+        <td>121.8299</td>
+        <td>185.3841</td>
+        <td>160.6566</td>
+        <td>116.1478</td>
+        <td>118.1078</td>
+        <td>141.7946</td>
+        <td>65.56351</td>
+        <td>48.84066</td>
+        <td>23.13864</td>
+        <td>18.12932</td>
+        <td>10.28531</td>
+        <td>6.029663</td>
+        <td>6.044627</td>
+        <td>5.694764</td>
+        <td>3.739085</td>
+        <td>3.896037</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+      <tr id="LC24" class="js-file-line">
+        <td id="L24" class="blob-num js-line-number" data-line-number="24"></td>
+        <td>22</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>19.58994</td>
+        <td>42.30355</td>
+        <td>96.26777</td>
+        <td>187.1207</td>
+        <td>179.6626</td>
+        <td>221.3898</td>
+        <td>154.2617</td>
+        <td>142.1604</td>
+        <td>148.5737</td>
+        <td>67.17937</td>
+        <td>40.69044</td>
+        <td>39.74512</td>
+        <td>26.10166</td>
+        <td>14.48469</td>
+        <td>8.65873</td>
+        <td>3.896037</td>
+        <td>3.571392</td>
+        <td>3.896037</td>
+        <td>3.896037</td>
+        <td>3.896037</td>
+        <td>1.077756</td>
+        <td>0.0</td>
+      </tr>
+      <tr id="LC25" class="js-file-line">
+        <td id="L25" class="blob-num js-line-number" data-line-number="25"></td>
+        <td>23</td>
+        <td>0.001229679</td>
+        <td>3.008948</td>
+        <td>5.909858</td>
+        <td>33.50574</td>
+        <td>104.3341</td>
+        <td>152.2165</td>
+        <td>198.1988</td>
+        <td>191.841</td>
+        <td>228.7349</td>
+        <td>168.1041</td>
+        <td>144.2759</td>
+        <td>110.7436</td>
+        <td>57.65214</td>
+        <td>42.63504</td>
+        <td>27.91891</td>
+        <td>15.41052</td>
+        <td>8.056102</td>
+        <td>3.90283</td>
+        <td>3.879774</td>
+        <td>3.936718</td>
+        <td>3.968634</td>
+        <td>0.1236256</td>
+        <td>3.985531</td>
+        <td>-0.1835741</td>
+      </tr>
+      <tr id="LC26" class="js-file-line">
+        <td id="L26" class="blob-num js-line-number" data-line-number="26"></td>
+        <td>24</td>
+        <td>0.0</td>
+        <td>5.626141</td>
+        <td>7.676256</td>
+        <td>63.16226</td>
+        <td>45.99762</td>
+        <td>79.56688</td>
+        <td>227.311</td>
+        <td>203.9287</td>
+        <td>172.5618</td>
+        <td>177.1462</td>
+        <td>140.4554</td>
+        <td>123.9905</td>
+        <td>110.346</td>
+        <td>65.12319</td>
+        <td>34.31887</td>
+        <td>24.5278</td>
+        <td>9.561069</td>
+        <td>3.334991</td>
+        <td>5.590495</td>
+        <td>5.487353</td>
+        <td>5.909499</td>
+        <td>5.868994</td>
+        <td>5.833817</td>
+        <td>3.568177</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+  </div>
+
+</div>
+
+<button type="button" data-facebox="#jump-to-line" data-facebox-class="linejump" data-hotkey="l" class="d-none">Jump to Line</button>
+<div id="jump-to-line" style="display:none">
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="" class="js-jump-to-line-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input class="form-control linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" aria-label="Jump to line" autofocus>
+    <button type="submit" class="btn">Go</button>
+</form></div>
+
+  </div>
+  <div class="modal-backdrop js-touch-events"></div>
+</div>
+
+
+    </div>
+  </div>
+
+    </div>
+
+        <div class="container site-footer-container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links float-right">
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact GitHub</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage" class="site-footer-mark" title="GitHub">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2017 <span title="0.07064s from github-fe140-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+    
+
+    <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+      <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+      <button type="button" class="flash-close js-flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+        <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+      </button>
+      You can't perform that action at this time.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/compat-8e19569aacd39e737a14c8515582825f3c90d1794c0e5539f9b525b8eb8b5a8e.js"></script>
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-d23e32e482112ba5e3ea9bd8dc7e555680116a74e002746ac91f41a4e5875a9b.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-fd7875ab2f38c623b18fcd44bf639ae06a817381d4b739bd8e758bb84367da2a.js"></script>
+      
+      
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner d-none">
+      <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+    <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+    </button>
+  </div>
+</div>
+
+  </body>
+</html>
+
