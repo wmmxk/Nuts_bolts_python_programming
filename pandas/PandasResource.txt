@@ -1,0 +1,2 @@
+# very nice jupyter notebook
+http://nbviewer.jupyter.org/github/justmarkham/pandas-videos/blob/master/pandas.ipynb
