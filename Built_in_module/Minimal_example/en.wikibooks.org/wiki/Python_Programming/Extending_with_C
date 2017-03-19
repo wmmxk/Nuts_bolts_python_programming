@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Python Programming/Extending with C - Wikibooks, open books for an open world</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Python_Programming/Extending_with_C","wgTitle":"Python Programming/Extending with C","wgCurRevisionId":3115702,"wgRevisionId":3115702,"wgArticleId":72222,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Python Programming"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Python_Programming/Extending_with_C","wgRelevantArticleId":72222,"wgRequestId":"WL8XtApAEKcAAANQn6EAAAAG","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"value":{"levels":3,"quality":2,"pristine":3}}},"wgStableRevisionId":3115702,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsShouldSendModuleToUser":false,"wgPopupsConflictsWithNavPopupGadget":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":false,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgULSCurrentAutonym":"English","wgNoticeProject":"wikibooks","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.flaggedRevs.basic":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.wikidialog","ext.gadget.commons-file","ext.centralauth.centralautologin","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.compactlinks","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.flaggedRevs.advanced","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.flaggedRevs.basic%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.14"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/w/index.php?title=Python_Programming/Extending_with_C&amp;action=edit"/>
+<link rel="edit" title="Edit" href="/w/index.php?title=Python_Programming/Extending_with_C&amp;action=edit"/>
+<link rel="shortcut icon" href="/static/favicon/wikibooks.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikibooks (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikibooks.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Wikibooks Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="https://en.wikibooks.org/wiki/Python_Programming/Extending_with_C"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Python_Programming_Extending_with_C rootpage-Python_Programming skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Python Programming/Extending with C</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikibooks, open books for an open world</div>
+								<div id="contentSub"><span class="subpages">&lt; <a href="/wiki/Python_Programming" title="Python Programming">Python Programming</a></span></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="noprint">
+<table style="border:1px solid black; width:100%; border-spacing:0px; margin:0.25em;">
+<tr>
+<td width="33%" bgcolor="#FFFFE0"><a href="/w/index.php?title=Python_Programming/HTTP_Tools&amp;action=edit&amp;redlink=1" class="new" title="Python Programming/HTTP Tools (does not exist)">Previous: HTTP Tools</a></td>
+<td width="33%" bgcolor="#FFFFE0" align="center"><a href="/wiki/Python_Programming" title="Python Programming">Index</a></td>
+<td width="33%" bgcolor="#FFFFE0" align="right"><a href="/wiki/Python_Programming/Extending_with_C%2B%2B" title="Python Programming/Extending with C++">Next: Extending with C++</a></td>
+</tr>
+</table>
+</div>
+<p>This gives a minimal Example on how to Extend Python with C. Linux is used for building (feel free to extend it for other Platforms). If you have any problems, please report them (e.g. on the dicussion page), I will check back in a while and try to sort them out.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Using_the_Python.2FC_API"><span class="tocnumber">1</span> <span class="toctext">Using the Python/C API</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#A_minimal_example"><span class="tocnumber">1.1</span> <span class="toctext">A minimal example</span></a>
+<ul>
+<li class="toclevel-3 tocsection-3"><a href="#The_C_source_code_.28hellomodule.c.29"><span class="tocnumber">1.1.1</span> <span class="toctext">The C source code (hellomodule.c)</span></a></li>
+<li class="toclevel-3 tocsection-4"><a href="#Building_the_extension_module_with_GCC_for_Linux"><span class="tocnumber">1.1.2</span> <span class="toctext">Building the extension module with GCC for Linux</span></a></li>
+<li class="toclevel-3 tocsection-5"><a href="#Building_the_extension_module_with_GCC_for_Microsoft_Windows"><span class="tocnumber">1.1.3</span> <span class="toctext">Building the extension module with GCC for Microsoft Windows</span></a></li>
+<li class="toclevel-3 tocsection-6"><a href="#Building_the_extension_module_using_Microsoft_Visual_C.2B.2B"><span class="tocnumber">1.1.4</span> <span class="toctext">Building the extension module using Microsoft Visual C++</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="#Using_the_extension_module"><span class="tocnumber">1.1.5</span> <span class="toctext">Using the extension module</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-8"><a href="#A_module_for_calculating_fibonacci_numbers"><span class="tocnumber">1.2</span> <span class="toctext">A module for calculating fibonacci numbers</span></a>
+<ul>
+<li class="toclevel-3 tocsection-9"><a href="#The_C_source_code_.28fibmodule.c.29"><span class="tocnumber">1.2.1</span> <span class="toctext">The C source code (fibmodule.c)</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="#The_build_script_.28setup.py.29"><span class="tocnumber">1.2.2</span> <span class="toctext">The build script (setup.py)</span></a></li>
+<li class="toclevel-3 tocsection-11"><a href="#How_to_use_it.3F"><span class="tocnumber">1.2.3</span> <span class="toctext">How to use it?</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="#Using_SWIG"><span class="tocnumber">2</span> <span class="toctext">Using SWIG</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Using_the_Python.2FC_API">Using the Python/C API</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Python_Programming/Extending_with_C&amp;action=edit&amp;section=1" title="Edit section: Using the Python/C API">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>On an Ubuntu system, you might need to run</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+$ sudo apt-get install python-dev
+</pre></div>
+<p>This command installs you the python developement package and ensures that you can use the line <code>#include &lt;Python.h&gt;</code> in the C source code. On other systems like openSUSE the needed package calls <code>python-devel</code> and can be installed by using <code>zypper</code>:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+$ sudo zypper install python-devel
+</pre></div>
+<ul>
+<li><a rel="nofollow" class="external free" href="https://docs.python.org/2/extending/index.html">https://docs.python.org/2/extending/index.html</a></li>
+<li><a rel="nofollow" class="external free" href="https://docs.python.org/2/c-api/index.html">https://docs.python.org/2/c-api/index.html</a></li>
+</ul>
+<h3><span class="mw-headline" id="A_minimal_example">A minimal example</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Python_Programming/Extending_with_C&amp;action=edit&amp;section=2" title="Edit section: A minimal example">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The minimal example we will create now is very similar in behaviour to the following python snippet:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+     <span class="s2">"Greet somebody."</span>
+     <span class="k">print</span> <span class="s2">"Hello </span><span class="si">%s</span><span class="s2">!"</span> <span class="o">%</span> <span class="n">name</span>
+</pre></div>
+<h4><span class="mw-headline" id="The_C_source_code_.28hellomodule.c.29">The C source code (<tt>hellomodule.c</tt>)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Python_Programming/Extending_with_C&amp;action=edit&amp;section=3" title="Edit section: The C source code (hellomodule.c)">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="cp">#include</span> <span class="cpf">&lt;Python.h&gt;</span>
+
+<span class="k">static</span> <span class="n">PyObject</span><span class="o">*</span>
+<span class="nf">say_hello</span><span class="p">(</span><span class="n">PyObject</span><span class="o">*</span> <span class="n">self</span><span class="p">,</span> <span class="n">PyObject</span><span class="o">*</span> <span class="n">args</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">;</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">PyArg_ParseTuple</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="s">"s"</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">name</span><span class="p">))</span>
+        <span class="k">return</span> <span class="nb">NULL</span><span class="p">;</span>
+
+    <span class="n">printf</span><span class="p">(</span><span class="s">"Hello %s!</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">name</span><span class="p">);</span>
+
+    <span class="n">Py_RETURN_NONE</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">static</span> <span class="n">PyMethodDef</span> <span class="n">HelloMethods</span><span class="p">[]</span> <span class="o">=</span>
+<span class="p">{</span>
+     <span class="p">{</span><span class="s">"say_hello"</span><span class="p">,</span> <span class="n">say_hello</span><span class="p">,</span> <span class="n">METH_VARARGS</span><span class="p">,</span> <span class="s">"Greet somebody."</span><span class="p">},</span>
+     <span class="p">{</span><span class="nb">NULL</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">}</span>
+<span class="p">};</span>
+
+<span class="n">PyMODINIT_FUNC</span>
+<span class="nf">inithello</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+     <span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="n">Py_InitModule</span><span class="p">(</span><span class="s">"hello"</span><span class="p">,</span> <span class="n">HelloMethods</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+<h4><span class="mw-headline" id="Building_the_extension_module_with_GCC_for_Linux">Building the extension module with GCC for Linux</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Python_Programming/Extending_with_C&amp;action=edit&amp;section=4" title="Edit section: Building the extension module with GCC for Linux">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>To build our extension module we create the file <tt>setup.py</tt> like:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kn">from</span> <span class="nn">distutils.core</span> <span class="kn">import</span> <span class="n">setup</span><span class="p">,</span> <span class="n">Extension</span>
+
+<span class="n">module1</span> <span class="o">=</span> <span class="n">Extension</span><span class="p">(</span><span class="s1">'hello'</span><span class="p">,</span> <span class="n">sources</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'hellomodule.c'</span><span class="p">])</span>
+
+<span class="n">setup</span> <span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s1">'PackageName'</span><span class="p">,</span>
+        <span class="n">version</span> <span class="o">=</span> <span class="s1">'1.0'</span><span class="p">,</span>
+        <span class="n">description</span> <span class="o">=</span> <span class="s1">'This is a demo package'</span><span class="p">,</span>
+        <span class="n">ext_modules</span> <span class="o">=</span> <span class="p">[</span><span class="n">module1</span><span class="p">])</span>
+</pre></div>
+<p>Now we can build our module with</p>
+<pre>
+python setup.py build
+</pre>
+<p>The module <tt>hello.so</tt> will end up in <tt>build/lib.linux-i686-<i>x</i>.<i>y</i></tt>.</p>
+<h4><span class="mw-headline" id="Building_the_extension_module_with_GCC_for_Microsoft_Windows">Building the extension module with GCC for Microsoft Windows</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Python_Programming/Extending_with_C&amp;action=edit&amp;section=5" title="Edit section: Building the extension module with GCC for Microsoft Windows">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Microsoft Windows users can use <a href="https://en.wikipedia.org/wiki/MinGW" class="extiw" title="w:MinGW">MinGW</a> to compile this from <tt><a href="https://en.wikipedia.org/wiki/cmd.exe" class="extiw" title="w:cmd.exe">cmd.exe</a></tt> using a similar method to Linux user, as shown above. Assuming <tt>gcc</tt> is in the <tt>PATH</tt> environment variable, type:</p>
+<pre>
+python setup.py build -cmingw32
+</pre>
+<p>The module <tt>hello.pyd</tt> will end up in <tt>build\lib.win32-<i>x</i>.<i>y</i></tt>, which is a Python Dynamic Module (similar to a <tt>DLL</tt>).</p>
+<p>An alternate way of building the module in Windows is to build a DLL. (This method does not need an extension module file). From <tt>cmd.exe</tt>, type:</p>
+<pre>
+gcc -c  hellomodule.c -I/Python<i>XY</i>/include
+gcc -shared hellomodule.o -L/Python<i>XY</i>/libs -lpython<i>XY</i> -o hello.dll
+</pre>
+<p>where <i>XY</i> represents the version of Python, such as "24" for version 2.4.</p>
+<h4><span class="mw-headline" id="Building_the_extension_module_using_Microsoft_Visual_C.2B.2B">Building the extension module using Microsoft Visual C++</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Python_Programming/Extending_with_C&amp;action=edit&amp;section=6" title="Edit section: Building the extension module using Microsoft Visual C++">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>With VC8 distutils is broken. We will use cl.exe from a command prompt instead:</p>
+<pre>
+cl /LD hellomodule.c /Ic:\Python24\include c:\Python24\libs\python24.lib /link/out:hello.dll
+</pre>
+<h4><span class="mw-headline" id="Using_the_extension_module">Using the extension module</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Python_Programming/Extending_with_C&amp;action=edit&amp;section=7" title="Edit section: Using the extension module">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Change to the subdirectory where the file `hello.so` resides. In an interactive python session you can use the module as follows.</p>
+<pre>
+&gt;&gt;&gt; import hello
+&gt;&gt;&gt; hello.say_hello("World")
+Hello World!
+</pre>
+<h3><span class="mw-headline" id="A_module_for_calculating_fibonacci_numbers">A module for calculating fibonacci numbers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Python_Programming/Extending_with_C&amp;action=edit&amp;section=8" title="Edit section: A module for calculating fibonacci numbers">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h4><span class="mw-headline" id="The_C_source_code_.28fibmodule.c.29">The C source code (fibmodule.c)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Python_Programming/Extending_with_C&amp;action=edit&amp;section=9" title="Edit section: The C source code (fibmodule.c)">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="cp">#include</span> <span class="cpf">&lt;Python.h&gt;</span>
+
+<span class="kt">int</span>
+<span class="nf">_fib</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">n</span><span class="p">;</span>
+    <span class="k">else</span>
+        <span class="k">return</span> <span class="n">_fib</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">_fib</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">2</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">static</span> <span class="n">PyObject</span><span class="o">*</span>
+<span class="nf">fib</span><span class="p">(</span><span class="n">PyObject</span><span class="o">*</span> <span class="n">self</span><span class="p">,</span> <span class="n">PyObject</span><span class="o">*</span> <span class="n">args</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">n</span><span class="p">;</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">PyArg_ParseTuple</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="s">"i"</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">n</span><span class="p">))</span>
+        <span class="k">return</span> <span class="nb">NULL</span><span class="p">;</span>
+
+    <span class="k">return</span> <span class="n">Py_BuildValue</span><span class="p">(</span><span class="s">"i"</span><span class="p">,</span> <span class="n">_fib</span><span class="p">(</span><span class="n">n</span><span class="p">));</span>
+<span class="p">}</span>
+
+<span class="k">static</span> <span class="n">PyMethodDef</span> <span class="n">FibMethods</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="p">{</span><span class="s">"fib"</span><span class="p">,</span> <span class="n">fib</span><span class="p">,</span> <span class="n">METH_VARARGS</span><span class="p">,</span> <span class="s">"Calculate the Fibonacci numbers."</span><span class="p">},</span>
+    <span class="p">{</span><span class="nb">NULL</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">}</span>
+<span class="p">};</span>
+
+<span class="n">PyMODINIT_FUNC</span>
+<span class="nf">initfib</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="n">Py_InitModule</span><span class="p">(</span><span class="s">"fib"</span><span class="p">,</span> <span class="n">FibMethods</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+<h4><span class="mw-headline" id="The_build_script_.28setup.py.29">The build script (setup.py)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Python_Programming/Extending_with_C&amp;action=edit&amp;section=10" title="Edit section: The build script (setup.py)">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kn">from</span> <span class="nn">distutils.core</span> <span class="kn">import</span> <span class="n">setup</span><span class="p">,</span> <span class="n">Extension</span>
+
+<span class="n">module1</span> <span class="o">=</span> <span class="n">Extension</span><span class="p">(</span><span class="s1">'fib'</span><span class="p">,</span> <span class="n">sources</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'fibmodule.c'</span><span class="p">])</span>
+
+<span class="n">setup</span> <span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s1">'PackageName'</span><span class="p">,</span>
+        <span class="n">version</span> <span class="o">=</span> <span class="s1">'1.0'</span><span class="p">,</span>
+        <span class="n">description</span> <span class="o">=</span> <span class="s1">'This is a demo package'</span><span class="p">,</span>
+        <span class="n">ext_modules</span> <span class="o">=</span> <span class="p">[</span><span class="n">module1</span><span class="p">])</span>
+</pre></div>
+<h4><span class="mw-headline" id="How_to_use_it.3F">How to use it?</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Python_Programming/Extending_with_C&amp;action=edit&amp;section=11" title="Edit section: How to use it?">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<pre>
+&gt;&gt;&gt; import fib
+&gt;&gt;&gt; fib.fib(10)
+55
+</pre>
+<h2><span class="mw-headline" id="Using_SWIG">Using SWIG</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Python_Programming/Extending_with_C&amp;action=edit&amp;section=12" title="Edit section: Using SWIG">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Creating the previous example using SWIG is much more straight forward. To follow this path you need to get <a rel="nofollow" class="external text" href="http://www.swig.org/">SWIG</a> up and running first. To install it on an Ubuntu system, you might need to run the following commands</p>
+<pre>
+$ sudo apt-get install swig
+$ sudo apt-get install python-dev
+</pre>
+<p>After that create two files.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="cm">/*hellomodule.c*/</span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span>
+
+<span class="kt">void</span> <span class="nf">say_hello</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"Hello %s!</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">name</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="cm">/*hello.i*/</span>
+
+<span class="o">%</span><span class="n">module</span> <span class="n">hello</span>
+<span class="k">extern</span> <span class="kt">void</span> <span class="n">say_hello</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">);</span>
+</pre></div>
+<p>Now comes the more difficult part, gluing it all together.</p>
+<p>First we need to let SWIG do its work.</p>
+<pre>
+swig -python hello.i
+</pre>
+<p>This gives us the files `hello.py` and `hello_wrap.c`.</p>
+<p>The next step is compiling (substitute /usr/include/python2.4/ with the correct path for your setup!).</p>
+<pre>
+gcc -fpic -c hellomodule.c hello_wrap.c -I/usr/include/python2.4/
+</pre>
+<p>Now linking and we are done!</p>
+<pre>
+gcc -shared hellomodule.o hello_wrap.o -o _hello.so -lpython
+</pre>
+<p>The module is used in the following way.</p>
+<pre>
+&gt;&gt;&gt; import hello
+&gt;&gt;&gt; hello.say_hello("World")
+Hello World!
+</pre>
+<div class="noprint">
+<table style="border:1px solid black; width:100%; border-spacing:0px; margin:0.25em;">
+<tr>
+<td width="33%" bgcolor="#FFFFE0"><a href="/wiki/Python_Programming/pyFormex" title="Python Programming/pyFormex">Previous: pyFormex</a></td>
+<td width="33%" bgcolor="#FFFFE0" align="center"><a href="/wiki/Python_Programming" title="Python Programming">Index</a></td>
+<td width="33%" bgcolor="#FFFFE0" align="right"><a href="/wiki/Python_Programming/Extending_with_C%2B%2B" title="Python Programming/Extending with C++">Next: Extending with C++</a></td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1262
+Cached time: 20170214175143
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.020 seconds
+Real time usage: 0.159 seconds
+Preprocessor visited node count: 172/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 1536/2097152 bytes
+Template argument size: 108/2097152 bytes
+Highest expansion depth: 8/40
+Expensive parser function count: 0/500
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  140.981      1 -total
+  4.27%    6.022      2 Template:Python_Programming/Navigation
+  3.36%    4.730      2 Template:BookCat
+  2.20%    3.102      2 Template:BookCat/default
+  0.81%    1.138      2 Template:FULLBOOKNAME
+-->
+
+<!-- Saved in parser cache with key enwikibooks:pcache:idhash:72222-0!*!0!!en!*!* and timestamp 20170214175143 and revision id 3115702
+ -->
+<noscript><img src="//en.wikibooks.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikibooks.org/w/index.php?title=Python_Programming/Extending_with_C&amp;oldid=3115702">https://en.wikibooks.org/w/index.php?title=Python_Programming/Extending_with_C&amp;oldid=3115702</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/Category:Python_Programming" title="Category:Python Programming">Python Programming</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Discussion for this IP address</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Python+Programming%2FExtending+with+C" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Python+Programming%2FExtending+with+C" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Python_Programming/Extending_with_C"  title="View the content page [c]" accesskey="c">Book</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Python_Programming/Extending_with_C"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Discussion</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Python_Programming/Extending_with_C" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Python_Programming/Extending_with_C&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Python_Programming/Extending_with_C&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikibooks" title="Search Wikibooks [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-Navigation' aria-labelledby='p-Navigation-label'>
+			<h3 id='p-Navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main Page</a></li><li id="n-help"><a href="/wiki/Help:Contents" title="Find help on how to use and edit Wikibooks">Help</a></li><li id="n-Browse"><a href="/wiki/Wikibooks:Card_Catalog_Office" title="Check out what Wikibooks has to offer">Browse wiki</a></li><li id="n-Cookbook"><a href="/wiki/Cookbook:Table_of_Contents" title="Learn recipes from around the world">Cookbook</a></li><li id="n-Wikijunior"><a href="/wiki/Wikijunior" title="Books for children">Wikijunior</a></li><li id="n-Featured-books"><a href="/wiki/Wikibooks:Featured_books" title="The best of Wikibooks">Featured books</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-sitesupport"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikibooks.org&amp;uselang=en" title="Support Wikibooks">Donations</a></li><li id="n-randomrootpage"><a href="/wiki/Special:RandomRootpage">Random book</a></li><li id="n-Using-Wikibooks"><a href="/wiki/Using_Wikibooks">Using Wikibooks</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Community' aria-labelledby='p-Community-label'>
+			<h3 id='p-Community-label'>Community</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Reading-room"><a href="/wiki/Wikibooks:Reading_room" title="Discuss Wikibooks-related questions and concerns with others">Reading room</a></li><li id="n-portal"><a href="/wiki/Wikibooks:Community_Portal" title="Find your way around the Wikibooks community">Community portal</a></li><li id="n-currentevents"><a href="/wiki/Wikibooks:Reading_room/Bulletin_Board" title="Important community news">Bulletin Board</a></li><li id="n-maintenance"><a href="/wiki/Wikibooks:Maintenance" title="Frequent tasks that you can help with">Help out!</a></li><li id="n-Policies-and-guidelines"><a href="/wiki/Wikibooks:Policies_and_guidelines" title="Pages detailing important rules and procedures">Policies and guidelines</a></li><li id="n-contact"><a href="/wiki/Wikibooks:Contact_us" title="Alternative methods of communication">Contact us</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Python_Programming/Extending_with_C" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Python_Programming/Extending_with_C" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="//commons.wikimedia.org/wiki/Special:UploadWizard?uselang=en" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Python_Programming/Extending_with_C&amp;oldid=3115702" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Python_Programming/Extending_with_C&amp;action=info" title="More information about this page">Page information</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Python_Programming%2FExtending_with_C&amp;id=3115702" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>In other languages</h3>
+
+			<div class="body">
+									<ul>
+											</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-add wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:NewItem?site=enwikibooks&amp;page=Python+Programming%2FExtending+with+C" title="Add interlanguage links" class="wbc-editpage">Add links</a></span></div>			</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Sister_projects' aria-labelledby='p-Sister_projects-label'>
+			<h3 id='p-Sister_projects-label'>Sister projects</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Wikipedia"><a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></li><li id="n-Wikiversity"><a href="https://en.wikiversity.org/wiki/Wikiversity:Main_Page">Wikiversity</a></li><li id="n-Wiktionary"><a href="https://en.wiktionary.org/wiki/Wiktionary:Main_Page">Wiktionary</a></li><li id="n-Wikiquote"><a href="https://en.wikiquote.org/wiki/Main_Page">Wikiquote</a></li><li id="n-Wikisource"><a href="https://en.wikisource.org/wiki/Main_Page">Wikisource</a></li><li id="n-Wikinews"><a href="https://en.wikinews.org/wiki/Main_Page">Wikinews</a></li><li id="n-Wikivoyage"><a href="https://en.wikivoyage.org/wiki/Main_Page">Wikivoyage</a></li><li id="n-Commons"><a href="https://commons.wikimedia.org/wiki/Main_Page">Commons</a></li><li id="n-Wikidata"><a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Python+Programming%2FExtending+with+C">Create a collection</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Python+Programming%2FExtending+with+C&amp;returnto=Python+Programming%2FExtending+with+C&amp;oldid=3115702&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Python_Programming/Extending_with_C&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 8 September 2016, at 18:57.</li>
+											<li id="footer-info-copyright">Text is available under the <a href="//creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike License.</a>; additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy.</a></li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikibooks:Welcome" title="Wikibooks:Welcome">About Wikibooks</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikibooks:General_disclaimer" title="Wikibooks:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikibooks.org/w/index.php?title=Python_Programming/Extending_with_C&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.020","walltime":"0.159","ppvisitednodes":{"value":172,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":1536,"limit":2097152},"templateargumentsize":{"value":108,"limit":2097152},"expansiondepth":{"value":8,"limit":40},"expensivefunctioncount":{"value":0,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  140.981      1 -total","  4.27%    6.022      2 Template:Python_Programming/Navigation","  3.36%    4.730      2 Template:BookCat","  2.20%    3.102      2 Template:BookCat/default","  0.81%    1.138      2 Template:FULLBOOKNAME"]},"cachereport":{"origin":"mw1262","timestamp":"20170214175143","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":68,"wgHostname":"mw1212"});});</script>
+	</body>
+</html>
