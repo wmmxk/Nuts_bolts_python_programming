@@ -1,0 +1,10 @@
+#source of this tutorial:https://www.blog.pythonlibrary.org/2016/03/01/python-101-all-about-imports/
+
+This is to show even if you add __init__.py to the top folder and the subfolders in it, still you will
+run into this confusing error: ValueError: Attempted relative import in non-package, when your run a 
+script directory in the folder
+
+In this case, if you cd to the subpackage1, and run python ./module_x.py you will the above error.
+
+
+

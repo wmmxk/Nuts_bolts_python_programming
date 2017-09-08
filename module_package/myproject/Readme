@@ -1,0 +1,11 @@
+Suppose you working on a python project, you structure your codes like this.
+
+1. client folder holds the code you will run directly.
+2. libs holds all the helper functions, class definition and so on.
+
+1. How to import code from the libs to the code in client folder?
+   You added the project home directory to the PYTHON PATH in every client by importing the _init_paths.
+
+   Then you client code can import all the modules in the subfolder of the project folder using explicit import 
+
+2. Well in the libs, when a moudle use code in another lib, say lib2, lib3, you can use relate import after you add the project_path to PYTHONPATH
