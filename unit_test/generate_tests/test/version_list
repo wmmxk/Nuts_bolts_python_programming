@@ -1,0 +1,5 @@
+1.py : vanilla version. a inherited unit class is defined 
+2.py : try to test a list of cases in one method; the test stops at the first failure
+3.py : a function is defined to add method to a class, due to the scope issue; the last element is added repeatedly.
+4.py: use a function to capture the variable1.py : vanilla version. a inherited unit class is defined 
+5.py: refactor the add_methods as a decorator to a class
