@@ -1,0 +1,13 @@
+version1:
+    write the loop in cython but the exp operation is still a fun in python
+    You can check the html file to inspect
+
+version2:
+    replace the Python exponential function with the exp fun in the math lib in c
+    use -ffast-math flag when compiling the code
+
+version3:
+    write a c function for exponential and call it from cython
+
+version4:
+    omp version
