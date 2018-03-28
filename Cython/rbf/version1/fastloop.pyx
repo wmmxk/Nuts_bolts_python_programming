@@ -2,7 +2,6 @@ from math import exp
 import numpy as np
 
 def rbf_network(double[:, :] X,  double[:] beta, double theta):
-
     cdef int N = X.shape[0]
     cdef int D = X.shape[1]
     cdef double[:] Y = np.zeros(N)

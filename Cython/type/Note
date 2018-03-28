@@ -1,0 +1,15 @@
+This experiment is to show Cython is more than Python and adds optional typing. 
+When you cythonize a Python function the performance skyrockets if you define the type
+
+version1: pure python code, which takes 12 seconds.
+
+version2: put the Python function in a pyx file and then use a setup.py file to cythonize the Python code.
+          No type specification in the pyx function.
+
+
+version3: add type specification in the pyx function. It takes 0.06 seconds.
+
+
+
+How to run:
+    run the timing.sh
