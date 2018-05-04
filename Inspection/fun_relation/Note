@@ -1,0 +1,9 @@
+After you install pycallgraph, you run the example and saw this error:
+'The command "{}" is required to be in your path.'.format(cmd))
+pycallgraph.exceptions.PyCallGraphException: The command "dot" is required to be in your path.
+
+Solution:
+sudo apt install graphviz
+
+Confirmation the installation:
+dot -v
