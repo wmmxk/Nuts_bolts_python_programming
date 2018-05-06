@@ -1,0 +1,12 @@
+This comes from the situation where you walk through the MaskRcnn project.
+The explanation comes from page 691 and 698 in Mark Lutz's book.
+
+1. There is no global variables visible to all modules. Global to the files only. so in your example, the module 2 has to import the object "dict1" in module1 to modify it.
+
+2. The changing to mutable objects is visible to all the modules which can see the object. (The object is dict1 in your example)
+
+3. Whereas a variable is made a copy when being imported. So the chaning is not visiable to different modules.
+
+
+lexical scoping:
+The module2 can not see the variable you
