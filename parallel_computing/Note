@@ -1,0 +1,5 @@
+Even the serial solution for computing inverse of a numpy array multiple times
+is using all the cores available. if you use the command "top" to monitor the 
+usage of cpu. (percentage of a single core; use shift+I to toggle the configuration)
+
+lscpu shows how many cores on your computer.

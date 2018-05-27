@@ -1,0 +1,5 @@
+Python's object model can lead to inefficient memory access:
+https://jakevdp.github.io/blog/2014/05/09/why-python-is-slow/
+
+
+A NumPy array in its simplest form is a Python object build around a C array. That is, it has a pointer to a contiguous data buffer of values. A Python list, on the other hand, has a pointer to a contiguous buffer of pointers, each of which points to a Python object which in turn has references to its data (in this case, integers). This is a schematic of what the two might look like:

@@ -1,0 +1,10 @@
+The context is the RoiDataLoader for maskrcnn model. 
+
+__getitem__ a class with such a method can be indexed by a parameter and sliced.
+     When indexing, the index can be a tuple
+
+__iter__ defines an iterable object, which does necessarily has a __next__ method, like 
+      DataLoader class in pytorch. The __iter__ method of DataLoader returns DataLoaderIter(self)
+
+__next__  The iterator object returned by the iterable has a __next__ method.
+
