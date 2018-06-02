@@ -5,4 +5,8 @@ mylist = list(range(n))
 res = []
 for i in mylist:
     res.append(i*i)
-print("----%d number of elements in results"%(len(res)))
+if len(res)<10:
+   print("elements in results {} ".format(res))
+
+else:
+   print("elements in results {} ".format(res[:10]))
