@@ -1,0 +1,7 @@
+In multiprocessing, there is no data concurrency because there is no data-sharinb between processes except that it is defined explictly.
+
+
+There are three kinds of processes: parental process, child proces, server process.
+
+
+
