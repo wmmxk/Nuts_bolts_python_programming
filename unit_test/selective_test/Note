@@ -1,0 +1,6 @@
+selective criterion:
+
+1. pytest.mark
+# the tests should have clear outline
+2. pass a string when run pytest. pytest -k multiple -v 
+3. by testfile name: pytest ./test/test_math_lib.py -v 
