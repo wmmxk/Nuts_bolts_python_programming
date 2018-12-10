@@ -8,11 +8,11 @@ def create_train():
     train = Train(3, 4)
     return train
 
-def test_move_left(create_train):
+def test_move_left(create_train, boundary=2):
     train = create_train
     train.move_left()
     coor_x = train.x
-    assert 2 == coor_x
+    assert boundary == coor_x
 
 def test_move_down(create_train):
     train = create_train
