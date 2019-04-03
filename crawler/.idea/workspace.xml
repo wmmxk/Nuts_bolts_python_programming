@@ -2,11 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f4acf9c-0e54-4d5c-8def-199322a0fe97" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../data/Companies.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lib/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/test_facebook_log.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/test_download_from_chembl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/test_find_ki.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/crawler.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/crawler.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/test_sanity.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../out_data/.ipynb_checkpoints/save_two_column-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../out_data/log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../out_data/two_columns.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../out_data/two_columns_2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../plot_hist/.ipynb_checkpoints/Plot_hist-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../plot_hist/.ipynb_checkpoints/scientific notation-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../plot_hist/Plot_hist.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../plot_hist/scientific notation.ipynb" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,92 +34,42 @@
     <session id="552967230">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.26" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="Python Console" value="169" />
           <entry key="csv" value="3" />
-          <entry key="dummy" value="1" />
-          <entry key="py" value="1410" />
+          <entry key="dummy" value="22" />
+          <entry key="py" value="2354" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="1410" />
+          <entry key="PLAIN_TEXT" value="25" />
+          <entry key="Python" value="2523" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="2" />
-          <entry key="py" value="4" />
+          <entry key="py" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="4" />
+          <entry key="Python" value="6" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../test/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../test/test_sanity.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
-              <folding>
-                <element signature="e#0#47#0" expanded="true" />
-                <marker date="1554221137867" expanded="true" signature="195:408" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../test/test_download_mutationdb.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="e#1#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../test/test_facebook_log.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-95">
-              <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-                <marker date="1554217778528" expanded="true" signature="147:152" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../data/Companies.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -135,7 +93,10 @@
         <option value="$PROJECT_DIR$/../data/Companies.csv" />
         <option value="$PROJECT_DIR$/../test/test_facebook_log.py" />
         <option value="$PROJECT_DIR$/../test/test_download_mutationdb.py" />
+        <option value="$PROJECT_DIR$/../test/test_find_ki.py" />
         <option value="$PROJECT_DIR$/../test/test_sanity.py" />
+        <option value="$PROJECT_DIR$/../test/test_download_from_chembl.py" />
+        <option value="$PROJECT_DIR$/../test/test_download_from_chembl_elegant_wait.py" />
       </list>
     </option>
   </component>
@@ -151,6 +112,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -177,12 +139,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$USER_HOME$/anaconda3/envs/IDG/bin" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -201,7 +162,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_sanity.test_sanity">
+  <component name="RunManager" selected="Python tests.pytest for test_download_from_chembl_elegant_wait.test_download_from_chembl">
+    <configuration name="pytest for test_download_from_chembl_elegant_wait.test_download_from_chembl" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="crawler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_download_from_chembl_elegant_wait.test_download_from_chembl&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest for test_download_mutationdb.test_facebook_log" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="crawler" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -232,10 +208,13 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_sanity.test_sanity" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_find_ki.test_find_ki" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="crawler" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="JB_DISABLE_BUFFERING" value="" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../test" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -243,18 +222,40 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_sanity.test_sanity&quot;" />
+      <option name="_new_target" value="&quot;test_find_ki.test_find_ki&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test.test_download_from_chembl.test_sanity" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="crawler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="JB_DISABLE_BUFFERING" value="" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test.test_download_from_chembl.test_sanity&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.pytest for test_sanity.test_sanity" />
+      <item itemvalue="Python tests.pytest for test.test_download_from_chembl.test_sanity" />
       <item itemvalue="Python tests.pytest for test_facebook_log.test_facebook_log" />
       <item itemvalue="Python tests.pytest for test_download_mutationdb.test_facebook_log" />
+      <item itemvalue="Python tests.pytest for test_find_ki.test_find_ki" />
+      <item itemvalue="Python tests.pytest for test_download_from_chembl_elegant_wait.test_download_from_chembl" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for test_sanity.test_sanity" />
+        <item itemvalue="Python tests.pytest for test_download_from_chembl_elegant_wait.test_download_from_chembl" />
+        <item itemvalue="Python tests.pytest for test.test_download_from_chembl.test_sanity" />
+        <item itemvalue="Python tests.pytest for test_find_ki.test_find_ki" />
         <item itemvalue="Python tests.pytest for test_download_mutationdb.test_facebook_log" />
         <item itemvalue="Python tests.pytest for test_facebook_log.test_facebook_log" />
       </list>
@@ -274,53 +275,52 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_for_test_download_mutationdb_test_facebook_log - 2019.04.02 at 08h 56m 46s.xml">
-      <configuration name="pytest for test_download_mutationdb.test_facebook_log" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_download_mutationdb_test_facebook_log - 2019.04.02 at 08h 57m 20s.xml">
-      <configuration name="pytest for test_download_mutationdb.test_facebook_log" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_download_mutationdb_test_facebook_log - 2019.04.02 at 08h 57m 45s.xml">
-      <configuration name="pytest for test_download_mutationdb.test_facebook_log" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_download_mutationdb_test_facebook_log - 2019.04.02 at 08h 57m 53s.xml">
-      <configuration name="pytest for test_download_mutationdb.test_facebook_log" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_sanity_test_sanity - 2019.04.02 at 08h 58m 03s.xml">
+    <history-entry file="pytest_for_test_sanity_test_sanity - 2019.04.02 at 20h 17m 54s.xml">
       <configuration name="pytest for test_sanity.test_sanity" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_sanity_test_sanity - 2019.04.02 at 08h 58m 30s.xml">
-      <configuration name="pytest for test_sanity.test_sanity" configurationId="tests" />
+    <history-entry file="pytest_for_test_test_download_from_chembl_test_sanity - 2019.04.02 at 20h 25m 53s.xml">
+      <configuration name="pytest for test.test_download_from_chembl.test_sanity" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_sanity_test_sanity - 2019.04.02 at 08h 58m 50s.xml">
-      <configuration name="pytest for test_sanity.test_sanity" configurationId="tests" />
+    <history-entry file="pytest_for_test_download_from_chembl_elegant_wait_test_download_from_chembl - 2019.04.02 at 20h 32m 16s.xml">
+      <configuration name="pytest for test_download_from_chembl_elegant_wait.test_download_from_chembl" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_sanity_test_sanity - 2019.04.02 at 09h 00m 15s.xml">
-      <configuration name="pytest for test_sanity.test_sanity" configurationId="tests" />
+    <history-entry file="pytest_for_test_download_from_chembl_elegant_wait_test_download_from_chembl - 2019.04.02 at 20h 32m 41s.xml">
+      <configuration name="pytest for test_download_from_chembl_elegant_wait.test_download_from_chembl" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_sanity_test_sanity - 2019.04.02 at 09h 05m 44s.xml">
-      <configuration name="pytest for test_sanity.test_sanity" configurationId="tests" />
+    <history-entry file="pytest_for_test_download_from_chembl_elegant_wait_test_download_from_chembl - 2019.04.02 at 20h 33m 16s.xml">
+      <configuration name="pytest for test_download_from_chembl_elegant_wait.test_download_from_chembl" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_sanity_test_sanity - 2019.04.02 at 09h 06m 33s.xml">
-      <configuration name="pytest for test_sanity.test_sanity" configurationId="tests" />
+    <history-entry file="pytest_for_test_download_from_chembl_elegant_wait_test_download_from_chembl - 2019.04.02 at 20h 38m 14s.xml">
+      <configuration name="pytest for test_download_from_chembl_elegant_wait.test_download_from_chembl" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_download_from_chembl_elegant_wait_test_download_from_chembl - 2019.04.02 at 20h 39m 13s.xml">
+      <configuration name="pytest for test_download_from_chembl_elegant_wait.test_download_from_chembl" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_download_from_chembl_elegant_wait_test_download_from_chembl - 2019.04.02 at 20h 39m 37s.xml">
+      <configuration name="pytest for test_download_from_chembl_elegant_wait.test_download_from_chembl" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_download_from_chembl_elegant_wait_test_download_from_chembl - 2019.04.02 at 22h 14m 19s.xml">
+      <configuration name="pytest for test_download_from_chembl_elegant_wait.test_download_from_chembl" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_download_from_chembl_elegant_wait_test_download_from_chembl - 2019.04.02 at 22h 14m 52s.xml">
+      <configuration name="pytest for test_download_from_chembl_elegant_wait.test_download_from_chembl" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
+    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24972677" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24945416" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5210811" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.42259413" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39958158" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32972974" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3294979" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -331,48 +331,88 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>herg = target.search('CHEMBL5455')[0]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>download = browser.find_elements_by_xpath(&quot;&quot;&quot;.//*[@id=&quot;GladosMainContent&quot;]/div/div/div[1]/div[2]/div[1]/div[3]/div/a[1]&quot;&quot;&quot;)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>download = browser.find_element_by_xpath('//div[contains(@class, &quot;menu-button big BCK-download-btn-for-format&quot;')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>download = browser.find_element_by_xpath(&quot;&quot;&quot;// *[ @ id = &quot;GLaDOS-page-loaded&quot;]&quot;&quot;&quot;)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../test/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../data/Companies.csv">
+    <entry file="file://$PROJECT_DIR$/../test/test_facebook_log.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        <state relative-caret-position="20">
+          <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../test/test_facebook_log.py">
+    <entry file="file://$PROJECT_DIR$/../data/Companies.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-95">
-          <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-            <marker date="1554217778528" expanded="true" signature="147:152" ph="..." />
-          </folding>
+        <state relative-caret-position="140">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../test/test_download_mutationdb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="240">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
           <folding>
             <element signature="e#1#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../test/test_sanity.py">
+    <entry file="file://$PROJECT_DIR$/../test/test_find_ki.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+        <state relative-caret-position="160">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
           <folding>
-            <element signature="e#0#47#0" expanded="true" />
-            <marker date="1554221137867" expanded="true" signature="195:408" ph="..." />
+            <element signature="e#0#59#0" expanded="true" />
+            <marker date="1554237803663" expanded="true" signature="150:151" ph="..." />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../test/test_download_from_chembl_elegant_wait.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="49" selection-start-line="1" selection-start-column="49" selection-end-line="1" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../test/test_download_from_chembl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../test/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
