@@ -1,0 +1,11 @@
+This folder is to show a case where pd.read_csv file because of the charset of the input is not in ascii but binary.
+
+To make it work, I need to convert the datatype from binary to ascii.
+
+First, I used the file -i to check the charset
+
+code for converting a binary format file to ascii format:
+
+cat merge_bcp.txt | tr -d '\0' > merge_ascii.txt # bcp stands for binary communications protocol.
+
+Binary encoding emphasizes compactness over efficientcy of generation or interpretation. Most elements of the language, such as integers, real numbers, and operator names are represented by fewer characters in binary encoding than in the ASCII encoding. 
