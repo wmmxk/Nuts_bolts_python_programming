@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f4acf9c-0e54-4d5c-8def-199322a0fe97" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../test/test_download_from_chembl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/test_find_ki.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/crawler.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/crawler.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/test_sanity.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/test_facebook_log.py" beforeDir="false" afterPath="$PROJECT_DIR$/../test/test_facebook_log.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../out_data/.ipynb_checkpoints/save_two_column-checkpoint.ipynb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../out_data/log.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../out_data/two_columns.txt" beforeDir="false" />
@@ -35,9 +31,11 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="1" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.26" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.32" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -45,31 +43,77 @@
           <entry key="Python Console" value="169" />
           <entry key="csv" value="3" />
           <entry key="dummy" value="22" />
-          <entry key="py" value="2354" />
+          <entry key="py" value="3036" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="25" />
-          <entry key="Python" value="2523" />
+          <entry key="Python" value="3205" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="2" />
-          <entry key="py" value="6" />
+          <entry key="py" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="6" />
+          <entry key="Python" value="9" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../test/test_facebook_log.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+              <folding>
+                <element signature="e#62#92#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../test/test_download_login_required.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="620">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
+              <folding>
+                <element signature="e#62#92#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../test/test_download_from_chembl_elegant_wait.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="20">
+              <caret line="1" column="49" selection-start-line="1" selection-start-column="49" selection-end-line="1" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../test/test_download_from_chembl.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -91,12 +135,13 @@
       <list>
         <option value="$PROJECT_DIR$/../test/__init__.py" />
         <option value="$PROJECT_DIR$/../data/Companies.csv" />
-        <option value="$PROJECT_DIR$/../test/test_facebook_log.py" />
         <option value="$PROJECT_DIR$/../test/test_download_mutationdb.py" />
         <option value="$PROJECT_DIR$/../test/test_find_ki.py" />
         <option value="$PROJECT_DIR$/../test/test_sanity.py" />
         <option value="$PROJECT_DIR$/../test/test_download_from_chembl.py" />
         <option value="$PROJECT_DIR$/../test/test_download_from_chembl_elegant_wait.py" />
+        <option value="$PROJECT_DIR$/../test/test_facebook_log.py" />
+        <option value="$PROJECT_DIR$/../test/test_download_login_required.py" />
       </list>
     </option>
   </component>
@@ -162,7 +207,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_download_from_chembl_elegant_wait.test_download_from_chembl">
+  <component name="RunManager" selected="Python tests.pytest in test_download_login_required.py">
     <configuration name="pytest for test_download_from_chembl_elegant_wait.test_download_from_chembl" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="crawler" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -175,21 +220,6 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_download_from_chembl_elegant_wait.test_download_from_chembl&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_download_mutationdb.test_facebook_log" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="crawler" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_download_mutationdb.test_facebook_log&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -244,20 +274,35 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in test_download_login_required.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="crawler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/../test/test_download_login_required.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python tests.pytest for test.test_download_from_chembl.test_sanity" />
       <item itemvalue="Python tests.pytest for test_facebook_log.test_facebook_log" />
-      <item itemvalue="Python tests.pytest for test_download_mutationdb.test_facebook_log" />
       <item itemvalue="Python tests.pytest for test_find_ki.test_find_ki" />
       <item itemvalue="Python tests.pytest for test_download_from_chembl_elegant_wait.test_download_from_chembl" />
+      <item itemvalue="Python tests.pytest in test_download_login_required.py" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in test_download_login_required.py" />
+        <item itemvalue="Python tests.pytest for test_facebook_log.test_facebook_log" />
         <item itemvalue="Python tests.pytest for test_download_from_chembl_elegant_wait.test_download_from_chembl" />
         <item itemvalue="Python tests.pytest for test.test_download_from_chembl.test_sanity" />
         <item itemvalue="Python tests.pytest for test_find_ki.test_find_ki" />
-        <item itemvalue="Python tests.pytest for test_download_mutationdb.test_facebook_log" />
-        <item itemvalue="Python tests.pytest for test_facebook_log.test_facebook_log" />
       </list>
     </recent_temporary>
   </component>
@@ -275,9 +320,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_for_test_sanity_test_sanity - 2019.04.02 at 20h 17m 54s.xml">
-      <configuration name="pytest for test_sanity.test_sanity" configurationId="tests" />
-    </history-entry>
     <history-entry file="pytest_for_test_test_download_from_chembl_test_sanity - 2019.04.02 at 20h 25m 53s.xml">
       <configuration name="pytest for test.test_download_from_chembl.test_sanity" configurationId="tests" />
     </history-entry>
@@ -305,16 +347,20 @@
     <history-entry file="pytest_for_test_download_from_chembl_elegant_wait_test_download_from_chembl - 2019.04.02 at 22h 14m 52s.xml">
       <configuration name="pytest for test_download_from_chembl_elegant_wait.test_download_from_chembl" configurationId="tests" />
     </history-entry>
+    <history-entry file="pytest_for_test_facebook_log_test_facebook_log - 2019.04.17 at 11h 30m 43s.xml">
+      <configuration name="pytest for test_facebook_log.test_facebook_log" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24945416" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.42259413" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42259413" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39958158" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -356,13 +402,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../test/test_facebook_log.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../data/Companies.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -374,9 +413,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-          <folding>
-            <element signature="e#1#31#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -384,9 +420,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../test/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../test/test_facebook_log.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
           <folding>
-            <element signature="e#0#59#0" expanded="true" />
-            <marker date="1554237803663" expanded="true" signature="150:151" ph="..." />
+            <element signature="e#62#92#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -395,24 +440,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="1" column="49" selection-start-line="1" selection-start-column="49" selection-end-line="1" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../test/test_download_from_chembl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+        <state>
+          <caret lean-forward="true" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../test/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/../test/test_download_login_required.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#62#92#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

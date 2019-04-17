@@ -8,7 +8,7 @@ from getpass import getpass
 
 
 def test_facebook_log():
-    usr = input("Enter your email")
+    usr = input("Enter your email:")
     pwd = getpass("Enter your password:")
 
     driver = webdriver.Chrome()
