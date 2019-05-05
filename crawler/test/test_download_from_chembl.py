@@ -1,14 +1,26 @@
 import time
 
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
+from selenium.webdriver import ChromeOptions
 
 
 def test_download_from_chembl():
-    options = Options()
-    options.add_argument("--disable-infobars")
+    """
+    set the download path on the fly;
+    open the chrome driver
+    open the url in the driver
+    find the click for csv
+    click the csv button
+    then download
 
-    driver = webdriver.Chrome()
+    """
+    chrome_driver_path = "/usr/local/bin/chromedriver"
+
+    options = ChromeOptions()
+    prefs = {"download.default_directory": "/home/wxk/Downloads/stock/"}
+    options.add_experimental_option("prefs", prefs)
+
+    driver = webdriver.Chrome(chrome_options=options)# ,executable_path=chrome_driver_path)
 
     driver.get("https://www.ebi.ac.uk/chembl/g/#browse/activities/filter/target_chembl_id%3ACHEMBL5455")
     # wait 5 seconds for the website to load, otherwise the code will fail
