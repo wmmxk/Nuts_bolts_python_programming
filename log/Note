@@ -1,0 +1,6 @@
+how to run:
+python main.py # you will see the print result is from the agent and the main file are both saved in the ./out_data/agent.log.txt file.
+
+1. On Python 3.0 or later, you can globally redirect your print statements to a file. 
+
+
