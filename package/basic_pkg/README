@@ -1,0 +1,9 @@
+source: https://ewencp.org/blog/a-brief-introduction-to-packaging-python/index.html
+
+This is to learn how to develop a package.
+you can make modifications and test without having to re-install the package.
+
+how to run:
+the first time to run: ./run.sh
+
+

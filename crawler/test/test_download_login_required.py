@@ -27,7 +27,7 @@ def test_download():
         print("downloading url%s-----"% (i+2))
         driver.get(url)
         # to avoid too many download tasks, wait 5 seconds
-        time.sleep(5)
+        # time.sleep(5)
 
     print("end---------")
 

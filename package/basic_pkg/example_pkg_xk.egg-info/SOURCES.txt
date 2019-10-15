@@ -1,0 +1,9 @@
+setup.py
+example_pkg_xk.egg-info/PKG-INFO
+example_pkg_xk.egg-info/SOURCES.txt
+example_pkg_xk.egg-info/dependency_links.txt
+example_pkg_xk.egg-info/top_level.txt
+foo/__init__.py
+foo/my_math.py
+foo/level2/__init__.py
+foo/level2/another_mod.py
