@@ -4,14 +4,15 @@ source: https://www.youtube.com/watch?v=Hw21qZs7xkA
 
 
 from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
 from getpass import getpass
 
 
 def test_facebook_log():
     usr = input("Enter your email:")
     pwd = getpass("Enter your password:")
-
-    driver = webdriver.Chrome()
+    driver = webdriver.Chrome(ChromeDriverManager().install()) # diver
+    #driver = webdriver.Chrome()
     driver.get("https://www.facebook.com/")
 
     username_box = driver.find_element_by_id("email")
