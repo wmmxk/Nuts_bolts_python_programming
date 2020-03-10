@@ -1,6 +1,6 @@
-```
+'''
 source: https://stackoverflow.com/questions/53729201/save-complete-web-page-incl-css-images-using-python-selenium
-```
+'''
 
 import time
 from webdriver_manager.chrome import ChromeDriverManager
@@ -9,13 +9,14 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.expected_conditions import visibility_of_element_located
 from selenium.webdriver.support.ui import WebDriverWait
 import pyautogui
+from paths import chrome_driver_p
 
 URL = 'https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastx&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome'
 SEQUENCE = 'CCTAAACTATAGAAGGACAGCTCAAACACAAAGTTACCTAAACTATAGAAGGACAGCTCAAACACAAAGTTACCTAAACTATAGAAGGACAGCTCAAACACAAAGTTACCTAAACTATAGAAGGACAGCTCAAACACAAAGTTACCTAAACTATAGAAGGACA' #'GAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGA'
 
 # open page with selenium
 # (first need to download Chrome webdriver, or a firefox webdriver, etc)
-driver = webdriver.Chrome(ChromeDriverManager().install())
+driver = webdriver.Chrome(chrome_driver_p)
 driver.get(URL)
 
 # enter sequence into the query field and hit 'blast' button to search

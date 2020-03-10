@@ -1,0 +1,3 @@
+Get the coordinate of mouse:
+   sudo apt-get install xdotool
+   xdotool getmouselocation

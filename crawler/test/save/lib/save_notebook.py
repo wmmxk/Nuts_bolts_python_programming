@@ -19,5 +19,5 @@ def save_notebook(run_time=12, save_time=6):
     # save button
     pyautogui.click(1559, 105)
     pyautogui.click(1559, 105)
-
+    time.sleep(save_time)
     # cancel Leave site
