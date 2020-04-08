@@ -4,7 +4,7 @@ conda activate tf
 mkdir /media/wxk/My\ Passport/Data/intraday/$2
 for i in `seq 1 1 $1` ; 
 do 
-  python no_login_run_all.py; 
-  mv ~/Downloads/*stock* /media/wxk/My\ Passport/Data/intraday/$2/
+  python right_window.py; 
+  mv ~/Downloads/right_window/*stock* /media/wxk/My\ Passport/Data/intraday/$2/
   echo $i
 done

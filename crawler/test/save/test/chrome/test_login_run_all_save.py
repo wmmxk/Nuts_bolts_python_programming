@@ -55,7 +55,7 @@ def test_quant():
     # open a notebook
     time.sleep(3)
     pyautogui.click(237, 412)
-    time.sleep(8)
+    time.sleep(13)
     # print("start saving-----")
     save_notebook(run_time=120, save_time=10)
 
