@@ -185,10 +185,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2125" />
-    <option name="y" value="477" />
-    <option name="width" value="1567" />
-    <option name="height" value="767" />
+    <option name="x" value="67" />
+    <option name="y" value="25" />
+    <option name="width" value="1853" />
+    <option name="height" value="1055" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -233,7 +233,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -377,6 +377,8 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python tests.pytest for test.chrome.test_quantopian.test_quant" />
+      <item itemvalue="Python tests.pytest for test.test_quantopian.test_quant" />
       <item itemvalue="Python.test_notebook" />
       <item itemvalue="Python.test_login_run_all_save" />
       <item itemvalue="Python tests.pytest for test_quantopian.test_quant" />
